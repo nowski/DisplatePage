@@ -40,7 +40,6 @@ public class DisplateTest extends BasePage {
         posterPage.chooseSizeOfPoster(PosterPage.LARGE_SIZE);
     }
 
-
     @Test(priority = 4)
     public void checkPriceOfPoster() {
         assertThat(posterPage.checkPriceOfPoster()).isNotNull();
@@ -71,7 +70,6 @@ public class DisplateTest extends BasePage {
     public void checkCountryFromShipToList() {
         assertThat(cartPage.checkCountryFromShipToList(USA)).isTrue();
     }
-
 
     @Test(priority = 10)
     public void checkValueOfDiscount() {
